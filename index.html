@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://key0.cc/images/small/51047_9df2c143c09273b278886e35cb89aecc.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Astronomy Picture of the Day</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./imagem/logo.png" alt="Black and white NASA logo" class="logo">
+        <h1 class="tituloSite">apod</h1>
+    </header>
+
+    <main class="principal">
+            <p id="introducao">Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p>
+
+            <p id="data">2021-12-14</p>
+
+            <img src="https://apod.nasa.gov/apod/image/2112/HH666_HubbleOzsarac_960.jpg" alt="Picture of the Day" id="imagem">
+
+            <h2 id="titulo">Isso aí</h2>
+
+            <p id="autor">Ele</p>
+
+            <p id="explicacao">abc</p>
+
+            <input type="date" class="data">
+
+            <button class="botao">Search</button>        
+    </main>
+
+    <footer class="rodape">
+        <div class="rodapeUm">
+            <img src="./imagem/logo.png" alt="Black and white NASA logo" class="icon">
+            <div>
+                <p class="copyright">todos os direitos reservados</p>
+                <p class="copyright">projeto realizado para fins educacionais</p>
+                
+            </div>
+        </div>
+
+        <div>
+            <P class="copyrightDois" onclick="encaminharNasa()">NASA</P>
+            <p class="copyrightDois" onclick="encaminharAPOD()">NASA APOD</p>
+        </div>
+
+        <div class="redes">
+            <img src="./imagem/github.icon.png" alt="GitHub icon" class="icon" onclick="encaminharGithub()">
+            <img src="./imagem/linkedin.logo.png" alt="LinkeIn icon" class="icon" onclick="encaminharLinkedin()">
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="./encaminhar.js"></script>
+</body>
+</html>

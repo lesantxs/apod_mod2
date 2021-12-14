@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f1f1f17a;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px grey ;
+}
+
+.logo{
+    width: 58px;
+    padding: 4px;
+    margin-left: 30px;
+}
+
+.tituloSite{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tituloSite strong{
+    font-size: 25px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 35px 0;
+}
+
+#introducao{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#data{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+}
+
+#imagem{
+    width: 500px;
+    margin-top: 8px;
+}
+
+#titulo{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 8px;
+    font-size: 21px;
+}
+
+#autor{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 15px;
+}
+
+#explicacao{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 15px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.data{
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid black;
+    color: grey;
+    margin-top: 30px;
+}
+
+.botao{
+    margin-top: 15px;
+    height: 35px;
+    width: 120px;
+    background: black;
+    color: #f1f1f1;
+    border-width: 5px;
+}
+
+.rodape{
+    background-image: url(./imagem/rodape.png);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+.rodapeUm{
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    padding: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.copyrightDois{
+    padding: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.icon{
+    width: 58px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+
+    #imagem{
+        width: 90%;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+    }
+
+    .rodapeUm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .copyrightDois{
+        text-align: center;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+}
