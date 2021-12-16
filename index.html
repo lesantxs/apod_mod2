@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,38 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
     <title>Astronomy Picture of the Day</title>
 </head>
-<body>
+<body onload="consulta()">
     <header class="cabecalho">
         <img src="./imagem/logo.png" alt="Black and white NASA logo" class="logo">
         <h1 class="tituloSite">apod</h1>
     </header>
 
     <main class="principal">
+            <h2 class="tituloSite">Astronomy Picture of the Day</h2>
+
             <p id="introducao">Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p>
 
-            <p id="data">2021-12-14</p>
+            <p id="data"></p>
 
-            <img src="https://apod.nasa.gov/apod/image/2112/HH666_HubbleOzsarac_960.jpg" alt="Picture of the Day" id="imagem">
+            <div id="midia">
 
-            <h2 id="titulo">Isso aí</h2>
+            </div>
 
-            <p id="autor">Ele</p>
+            <h2 id="titulo"></h2>
 
-            <p id="explicacao">abc</p>
+            <p id="autor"></p>
+
+            <p id="explicacao"></p>
 
             <input type="date" class="data">
 
-            <button class="botao">Search</button>        
+            <p id="texto"></p>
+
+            <button class="botao" onclick="consulta()">Search</button>     
     </main>
 
     <footer class="rodape">
         <div class="rodapeUm">
             <img src="./imagem/logo.png" alt="Black and white NASA logo" class="icon">
             <div>
-                <p class="copyright">todos os direitos reservados</p>
-                <p class="copyright">projeto realizado para fins educacionais</p>
+                <p class="copyright">copyright &#169; 2021 by letícia santos</p>
+                <p class="copyright">project developed for educational purposes</p>
                 
             </div>
         </div>
@@ -51,12 +61,12 @@
         </div>
 
         <div class="redes">
-            <img src="./imagem/github.icon.png" alt="GitHub icon" class="icon" onclick="encaminharGithub()">
-            <img src="./imagem/linkedin.logo.png" alt="LinkeIn icon" class="icon" onclick="encaminharLinkedin()">
+            <img src="./imagem/github.icon.png" alt="GitHub icon" class="iconGit" onclick="encaminharGithub()">
+            <img src="./imagem/linkedin.logo.png" alt="LinkeIn icon" class="iconLink" onclick="encaminharLinkedin()">
         </div>
     </footer>
 
-
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
     <script src="./script.js"></script>
     <script src="./encaminhar.js"></script>
 </body>
