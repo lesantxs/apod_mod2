@@ -27,23 +27,21 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.tituloSite strong{
-    font-size: 25px;
-}
-
 .principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
-    margin: 35px 0;
+    min-height: 100vh;
+    margin: 38px 0;
 }
 
 #introducao{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     padding: 0 15px;
+    margin: 5px;
 }
 
 #data{
@@ -51,25 +49,35 @@ body{
     margin-top: 20px;
 }
 
-#imagem{
+#midia{
     width: 500px;
+    height: auto;
     margin-top: 8px;
+}
+
+#midiaJS{
+    width: 500px;
+    height: 312;
 }
 
 #titulo{
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 8px;
     font-size: 21px;
+    padding: 0 15px;
+    text-align: center;
 }
 
 #autor{
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 15px;
+    margin-top: 8px;
+    padding: 0 15px;
+    text-align: center;
 }
 
 #explicacao{
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
     padding: 0 15px;
 }
@@ -81,7 +89,14 @@ body{
     text-align: center;
     border: 2px solid black;
     color: grey;
-    margin-top: 30px;
+    margin-top: 28px;
+}
+
+#texto{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 15px;
 }
 
 .botao{
@@ -107,21 +122,55 @@ body{
     align-items: center;
 }
 
+.icon{
+    width: 58px;
+    padding: 5px;
+}
+
+.icon:hover{
+    width: 60px;
+}
+
 .copyright{
     padding: 2px;
     font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .copyrightDois{
     padding: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.icon{
-    width: 58px;
+.copyrightDois:hover{
+    text-decoration: underline;
+}
+
+.redes{
+    width: 130px;
+}
+
+.iconGit{
+    width: 56px;
     padding: 5px;
     cursor: pointer;
+}
+
+.iconGit:hover{
+    width: 58px;
+}
+
+.iconLink{
+    width: 58.2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.iconLink:hover{
+    width: 60.2px;
 }
 
 @media (max-width: 700px) {
@@ -136,8 +185,17 @@ body{
         margin-left: 0;
     }
 
-    #imagem{
+    #midia{
         width: 90%;
+    }
+
+    #midiaJS{
+        width: 100%;
+
+    }
+
+    .data{
+        background: white;
     }
 
     .rodape{
