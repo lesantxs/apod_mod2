@@ -11,7 +11,7 @@ function consultar() {
         },
         error: function () {
             $(".data").css({border: "2px solid red"})
-            $("#texto").html("Enter a date from June 16th, 1995 to the current date (except for June 17th, 18th and 19th, 1995).").css({color: "red"})
+            $("#texto").html("Please, enter a date from June 16th, 1995 to the current date (except for June 17th, 18th and 19th, 1995).").css({color: "red"})
         }
     })
 }
