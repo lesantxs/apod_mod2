@@ -1,23 +1,23 @@
-function consulta() {
+function consultar() {
     let data = $(".data").val()
     const chave = 'dNNwrKhvOInpkMrKEmgsoja5JwVjMgnlOdiYIyDB'
 
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=${chave}&date=${data}`,
         success: function (resultado) {
-            mostraResultado(resultado)
+            mostrarResultado(resultado)
             $(".data").css({border: "2px solid black"})
             $("#texto").html(" ")
         },
         error: function () {
             $(".data").css({border: "2px solid red"})
-            $("#texto").html("Enter a date from June 16th, 1995 to the current date.").css({color: "red"})
+            $("#texto").html("Enter a date from June 16th, 1995 to the current date (except for June 17th, 18th and 19th June, 1995).").css({color: "red"})
         }
     })
 }
 
 
-function mostraResultado(consulta) {
+function mostrarResultado(consulta) {
     const data = $("#data")
     const midia = $("#midia")
     const titulo = $("#titulo")
